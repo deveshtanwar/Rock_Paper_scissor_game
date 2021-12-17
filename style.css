@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Corinthia:wght@700&family=Fuzzy+Bubbles:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* SOURCE CODE COPYRIGHT - DEVESH TANWAR @2021 */
+body{
+    background: rgb(42, 42, 66);
+}
+
+header{
+    background-color: antiquewhite;
+    padding: 15px;
+    font-family: Asap, sans-serif;
+    text-align: center;
+    color: rgb(42, 42, 66);
+}
+
+.score_board{
+    position: relative;
+    border: 1px solid white;
+    width: 150px;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    font-family: Asap, sans-serif;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 4%;
+}
+
+.badge{
+    background-color: crimson;
+    padding: 6px 2px;
+    width: 40px;
+    font-family: Asap, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 4%;
+}
+
+#user_score{
+    position: absolute;
+    left: -19px;
+    top: 30px;
+}
+
+#comp_score{
+    position: absolute;
+    top: 30px;
+    right: -20px;
+}
+
+.vl{
+    border-left: 1px solid white;
+    height: 420px;
+    position: absolute;
+    left: 50%;
+}
+
+.banner{
+    position: absolute;
+    left: 19%;
+    font-family: Asap, sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color: crimson;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 4%;
+}
+
+.images{
+    position: absolute;
+    top: 45%;
+    left: 9%;
+}
+
+.hand{
+    width: 110px;
+    height: 110px;
+    border: 3px solid antiquewhite;
+    background-color: rgb(42, 42, 66);
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.hand > img{
+    width: 90px;
+    height: 100px;
+    padding: 10px;
+}
+
+.alert{
+    color: white;
+    font-size: 20px;
+    font-family: asap, sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 19%;
+}
+
+/* Right side */
+
+.right-header{
+    position: absolute;
+    left: 71.5%;
+    font-family: Asap, sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color: crimson;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 4%;
+}
+
+.compare{
+    position: absolute;
+    top: 57%;
+    left: 55%;
+}
+
+.r-hand{
+    width: 110px;
+    height: 110px;
+    border: 3px solid white;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 65px;
+}
+
+.r-hand > img{
+    width: 90px;
+    height: 100px;
+    padding: 10px;
+}
+
+#vs{
+    width: 90px;
+    height: 100px;
+}
+
+.r_user{
+    position: absolute;
+    left: 60.5%;
+    top: 43%;
+    font-family: Asap, sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(20, 113, 220);
+    padding: 10px 12px;
+    box-shadow: 0 8px 16px 0 rgba(87, 7, 7, 0.2);
+    border-radius: 4%;
+}
+
+.r_comp{
+    position: absolute;
+    left: 85%;
+    top: 43%;
+    font-family: Asap, sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(20, 113, 220);
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 4%;
+}
+
+.result{
+    color: white;
+    font-size: 28px;
+    font-family: asap, sans-serif;
+    position: absolute;
+    top: 83%;
+    left: 71%;
+}
+
+.owner{
+    position: absolute;
+    bottom: 10px;
+    left: 39%;
+    color: whitesmoke;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.owner > span {
+    color: #d01115;
+}
+
+/* hover and animations*/
+
+.hand:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    border-color: rgb(27, 27, 54);
+    box-shadow: 0 8px 16px 0 rgba(53, 33, 71, 0.2);
+}
+
+.green-glow{
+    border: 3px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b439;
+    border-radius: 50%;
+}
+
+.red-glow{
+    border: 3px solid #ec121b;
+    box-shadow: 0 0 10px #d01115;
+    border-radius: 50%;
+}
+
+.gray-glow{
+    border: 3px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+    border-radius: 50%;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1350px){
+   
+    .banner{
+        left: 30%;
+        top: 25%;
+    }
+
+    .images{
+        position: absolute;
+        top: 34%;
+        left: 6%;
+    }
+    
+    .hand{
+        width: 105px;
+        height: 105px;
+        margin: 0px 0px;
+    }
+    
+    .hand > img{
+        width: 85px;
+        height: 95px;
+        padding: 10px;
+    }
+
+    .alert{
+        position: absolute;
+        top: 48%;
+        left: 30%; 
+    }
+
+    .vl{
+        border: none;
+        border-bottom: 2px solid whitesmoke;
+        width: 360px;
+        left: 0%;
+        top: 0%;
+    }
+
+    .right-header{
+        position: absolute;
+        left: 37%;
+        top: 55%;
+    }
+
+    .r_user{
+        position: absolute;
+        left: 18%;
+        top: 63%;
+        padding: 8px 10px;
+    }
+    
+    .r_comp{
+        position: absolute;
+        left: 62%;
+        top: 63%;
+        padding: 8px 10px;
+    }
+
+    .compare {
+        position: absolute;
+        top: 72%;
+        left: 15%;
+    }
+
+    .r-hand{
+        width: 80px;
+        height: 80px;
+        margin: 0px 10px;
+    }
+    
+    .r-hand > img{
+        width: 60px;
+        height: 70px;
+        padding: 10px;
+    }
+
+    #vs{
+        width: 60px;
+        height: 70px;
+    }
+
+    .result{
+        font-size: 25px;
+        position: absolute;
+        top: 85%;
+        left: 37%;
+    }
+
+    .owner{
+        position: absolute;
+        bottom: 4%;
+        left: 4%;
+        font-size: 17px;
+    }
+}

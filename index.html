@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissor-Game</title>
+</head>
+<!-- SOURCE CODE COPYRIGHT - DEVESH TANWAR @2021-->
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="score_board">
+        <p class="badge" id="user_score">User</p>
+        <p class="badge" id="comp_score">Comp</p>
+        <p><span id="user_scoreSpan">0</span>:<span id="comp_scoreSpan">0</span></p>
+    </div>
+
+    <div class="vl"> </div>
+
+    <div class="banner">
+        Play Now !!!
+    </div>
+
+    <div class="images">
+        <div class="hand" id="rock">
+            <img id="r" src="images/rock.png" alt="rock_image">
+        </div>
+
+        <div class="hand" id="paper">
+            <img id="p" src="images/paper.png" alt="paper_image">
+        </div>
+
+        <div class="hand" id="scissor">
+            <img id="s" src="images/scissor.png" alt="scissor_image">
+        </div>
+    </div>
+
+    <div class="alert">
+        <p>Make your move</p>
+    </div>
+
+    <div class="right-header">
+        <p>Results</p>
+    </div>
+
+    <div class="r_user">User</div>
+    <div class="r_comp">Comp</div>
+
+    <div class="compare">
+        <div class="r-hand">
+            <img id="r-user-img" src="images/user.png" alt="dummy_image">
+        </div>
+
+        <img id="vs" src="images/vs.png" alt="vs_image">
+
+        <div class="r-hand" >
+            <img  id="r-comp-img" src="images/ai.png" alt="dummy_image">
+        </div>
+    </div>
+
+    <div class="result"></div>
+
+    <div class="owner">
+        Developed By DEVESH TANWAR with <span> &#10084 </span>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
